@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PetComponent } from './pet/pet.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BootchapComponent } from './bootstrap1/bootchap.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { ProductComponent } from './product/product.component';
@@ -13,6 +13,8 @@ import { ColorComponent } from './color/color.component';
 import { ArticleComponent } from './article/article.component';
 import { LikeComponent } from './like/like.component';
 import { NameCardComponent } from './name-card/name-card.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import { NameCardComponent } from './name-card/name-card.component';
     ColorComponent,
     ArticleComponent,
     LikeComponent,
-    NameCardComponent
+    NameCardComponent,
+    EmployeeComponent,
+    FormComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
