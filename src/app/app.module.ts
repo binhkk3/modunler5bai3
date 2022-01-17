@@ -10,6 +10,9 @@ import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { ProductComponent } from './product/product.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ColorComponent } from './color/color.component';
+import { ArticleComponent } from './article/article.component';
+import { LikeComponent } from './like/like.component';
+import { NameCardComponent } from './name-card/name-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { ColorComponent } from './color/color.component';
     BootstrapComponent,
     ProductComponent,
     CalculatorComponent,
-    ColorComponent
+    ColorComponent,
+    ArticleComponent,
+    LikeComponent,
+    NameCardComponent
   ],
     imports: [
         BrowserModule,

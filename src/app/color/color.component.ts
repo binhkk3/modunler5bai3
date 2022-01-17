@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-color',
@@ -6,21 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./color.component.css']
 })
 export class ColorComponent implements OnInit {
-  mau="233443(23,34,43)"
+  a = 1
+  b = 1
+  c = 1
 
-  constructor() { }
+  mau = `'rgb('`+`${this.a}`+`','`+`${this.b}`+`','`+`${this.c}`+`'
+  )'`;
+  constructor() {
+  }
 
 
   ngOnInit(): void {
   }
-  maudo(){
-    this.mau="red";
+
+  maudo() {
+    this.mau = "red";
   }
-  mauvang(){
-    this.mau="yellow";
+
+  mauvang() {
+    this.mau = "yellow";
   }
- mauxanh(){
-    this.mau="blue";
- }
+
+  mauxanh() {
+    this.mau = "blue";
+  }
 
 }

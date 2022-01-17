@@ -1,7 +1,22 @@
 <button (click)="maudo()">do</button>
 <button (click)="mauvang()">vang</button>
 <button (click)="mauxanh()">xanh</button>
+<div>
+  <label>màu</label>
+  <input type="range" min="1" max="255" [(ngModel)]="a">
+  <input type="number" [(ngModel)]="a">
+</div>
+<div>
+  <label>màu</label>
+  <input type="range" min="1" max="255" [(ngModel)]="b">
+  <input type="number" [(ngModel)]="b">
+</div>
+<div>
+  <label>màu</label>
+  <input type="range" min="1" max="255" [(ngModel)]="c">
+  <input type="number" [(ngModel)]="c">
+</div>
+<h1 [style.color]="mau">xin chao</h1>
 
-<h1 [style.color]=(mau)>xin chao</h1>
 
 
