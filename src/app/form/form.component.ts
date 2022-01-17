@@ -19,6 +19,6 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
   callingFunction() {
-
+console.log(this.formGroup.value)
   }
 }

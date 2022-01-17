@@ -1,0 +1,19 @@
+<div *ngFor="let pro of listProduct2">
+  <h1>{{pro.name}} giá {{pro.price}}</h1>
+</div>
+<form [formGroup]="formGroup" (ngSubmit)="callingFunction()">
+
+  <label>
+     id:
+    <input type="text" formControlName="id">
+  </label>
+  <label>
+    name:
+    <input type="text" formControlName="name">
+  </label>
+  <label>
+    price:
+    <input type="text" formControlName="price">
+  </label>
+  <button type="submit">Submit Application</button>
+</form>

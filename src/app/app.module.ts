@@ -15,6 +15,8 @@ import { LikeComponent } from './like/like.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FormComponent } from './form/form.component';
+import { DemoComponent } from './demo/demo.component';
+import { Product2Component } from './product2/product2.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FormComponent } from './form/form.component';
     LikeComponent,
     NameCardComponent,
     EmployeeComponent,
-    FormComponent
+    FormComponent,
+    DemoComponent,
+    Product2Component
   ],
     imports: [
         BrowserModule,
