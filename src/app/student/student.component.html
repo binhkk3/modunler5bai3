@@ -1,0 +1,19 @@
+<div *ngFor="let pro of listStudent">
+  <h1>{{pro.name}} tuổi {{pro.age}}</h1>
+</div>
+<form [formGroup]="formGroup" (ngSubmit)="callingFunction()">
+
+  <label>
+    id:
+    <input type="text" formControlName="id">
+  </label>
+  <label>
+    name:
+    <input type="text" formControlName="name">
+  </label>
+  <label>
+    age:
+    <input type="text" formControlName="age">
+  </label>
+  <button type="submit">Submit Application</button>
+</form>

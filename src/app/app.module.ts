@@ -17,6 +17,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { FormComponent } from './form/form.component';
 import { DemoComponent } from './demo/demo.component';
 import { Product2Component } from './product2/product2.component';
+import { StudentComponent } from './student/student.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { Product2Component } from './product2/product2.component';
     EmployeeComponent,
     FormComponent,
     DemoComponent,
-    Product2Component
+    Product2Component,
+    StudentComponent,
+    TodoComponent
   ],
     imports: [
         BrowserModule,
