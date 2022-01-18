@@ -21,6 +21,8 @@ import { StudentComponent } from './student/student.component';
 import { TodoComponent } from './todo/todo.component';
 import { RegisteComponent } from './registe/registe.component';
 import { TimelinesComponent } from './timelines/timelines.component';
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { TimelinesComponent } from './timelines/timelines.component';
     StudentComponent,
     TodoComponent,
     RegisteComponent,
-    TimelinesComponent
+    TimelinesComponent,
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent
   ],
     imports: [
         BrowserModule,
