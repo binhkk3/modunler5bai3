@@ -23,6 +23,7 @@ import { RegisteComponent } from './registe/registe.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
     RegisteComponent,
     TimelinesComponent,
     YoutubePlaylistComponent,
-    YoutubePlayerComponent
+    YoutubePlayerComponent,
+    ProductListComponent
   ],
     imports: [
         BrowserModule,
