@@ -20,6 +20,7 @@ import { Product2Component } from './product2/product2.component';
 import { StudentComponent } from './student/student.component';
 import { TodoComponent } from './todo/todo.component';
 import { RegisteComponent } from './registe/registe.component';
+import { TimelinesComponent } from './timelines/timelines.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RegisteComponent } from './registe/registe.component';
     Product2Component,
     StudentComponent,
     TodoComponent,
-    RegisteComponent
+    RegisteComponent,
+    TimelinesComponent
   ],
     imports: [
         BrowserModule,
