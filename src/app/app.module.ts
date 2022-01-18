@@ -19,6 +19,7 @@ import { DemoComponent } from './demo/demo.component';
 import { Product2Component } from './product2/product2.component';
 import { StudentComponent } from './student/student.component';
 import { TodoComponent } from './todo/todo.component';
+import { RegisteComponent } from './registe/registe.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TodoComponent } from './todo/todo.component';
     DemoComponent,
     Product2Component,
     StudentComponent,
-    TodoComponent
+    TodoComponent,
+    RegisteComponent
   ],
     imports: [
         BrowserModule,
