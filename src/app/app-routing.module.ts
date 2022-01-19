@@ -2,16 +2,19 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {YoutubePlaylistComponent} from './youtube-playlist/youtube-playlist.component';
 import {YoutubePlayerComponent} from './youtube-player/youtube-player.component';
+import {ListUserComponent} from "./components/list-user/list-user.component";
+import {EditUserComponent} from "./components/edit-user/edit-user.component";
 
 
 const routes: Routes = [
   {
-    path: 'youtube',
-    component: YoutubePlaylistComponent,
-    children: [{
-      path: ':id',
-      component: YoutubePlayerComponent
-    }]
+    path:'',
+    component: ListUserComponent
+
+  },
+  {
+    path:'edit-user/:id',
+    component: EditUserComponent
   }
 ];
 

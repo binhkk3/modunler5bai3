@@ -7,7 +7,6 @@ import { PetComponent } from './pet/pet.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BootchapComponent } from './bootstrap1/bootchap.component';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
-import { ProductComponent } from './product/product.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ColorComponent } from './color/color.component';
 import { ArticleComponent } from './article/article.component';
@@ -23,7 +22,9 @@ import { RegisteComponent } from './registe/registe.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
-import { ProductListComponent } from './product/product-list/product-list.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { ListUserComponent } from './components/list-user/list-user.component';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,6 @@ import { ProductListComponent } from './product/product-list/product-list.compon
     PetComponent,
     BootchapComponent,
     BootstrapComponent,
-    ProductComponent,
     CalculatorComponent,
     ColorComponent,
     ArticleComponent,
@@ -47,13 +47,15 @@ import { ProductListComponent } from './product/product-list/product-list.compon
     TimelinesComponent,
     YoutubePlaylistComponent,
     YoutubePlayerComponent,
-    ProductListComponent
+    ListUserComponent,
+    EditUserComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+      HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
