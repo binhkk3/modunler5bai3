@@ -5,36 +5,44 @@
    <label>name</label>
  </div>
   <div class="form-group">
-    <input type="text" class="form-control" formControlName="userForm" id="exampleInputName"
-    placeholder="name" value="{{user.name}}">
+    <input type="text" class="form-control" formControlName="id" id="exampleInputId"
+           placeholder="name">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="name" id="exampleInputName"
+    placeholder="name">
   </div>
   <div class="text-left">
     <label>acreage</label>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" formControlName="userForm" id="exampleInputAcreage"
-           placeholder="acreage" value="{{user.acreage}}">
+    <input type="text" class="form-control" formControlName="acreage" id="exampleInputAcreage"
+           placeholder="acreage">
   </div>
   <div class="text-left">
     <label>population</label>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" formControlName="userForm" id="exampleInputPopulation"
-           placeholder="population" value="{{user.population}}">
+    <input type="text" class="form-control" formControlName="population" id="exampleInputPopulation"
+           placeholder="population">
   </div>
   <div class="text-left">
     <label>gdp</label>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" formControlName="userForm" id="exampleInputGdp"
-           placeholder="gdp" value="{{user.gdp}}">
+    <input type="text" class="form-control" formControlName="gdp" id="exampleInputGdp"
+           placeholder="gdp">
   </div>
   <div class="text-left">
     <label>description</label>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" formControlName="userForm" id="exampleInputDescription"
-           placeholder="description" value="{{user.description}}">
+    <input type="text" class="form-control" formControlName="description" id="exampleInputDescription"
+           placeholder="description">
   </div>
+  <div class="form-group">
+    <button class="btn btn-info" type="submit" >Submit Application</button>
+  </div>
+  <button (click)="delete()">xoa</button>
 </form>
 
