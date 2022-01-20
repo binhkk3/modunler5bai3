@@ -15,6 +15,7 @@ export class ListUserComponent implements OnInit {
     this.userService.getAll().subscribe(result=> {
       this.usrs= result;
       console.log(result);
+      this.usrs = result;
     },error => {
       console.log(error)
       }

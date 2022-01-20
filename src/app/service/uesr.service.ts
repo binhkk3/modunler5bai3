@@ -14,4 +14,7 @@ export class UesrService {
 return this.httpClient.get<Usr[]>(API_URL);
   }
 
+  getById(id:string): Observable<Usr>{
+    return this.httpClient.get<Usr>(API_URL+`/${id}`);
+ }
 }
