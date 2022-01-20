@@ -1,34 +1,40 @@
 
 <form [formGroup]="userForm" (ngSubmit)="updateUserProfile()">
 
-  <label>
-    name:
-    <input type="text" class="form-control"
-           formControlName="name">
-  </label>
-  <div class="col alert alert-danger" role="alert"
-       *ngIf="userForm.controls['name'].errors?.['required']
-         ">
-    khong de trong
+ <div class="text-left">
+   <label>name</label>
+ </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="userForm" id="exampleInputName"
+    placeholder="name" value="{{user.name}}">
   </div>
-  <label>
-    age:
-    <input type="text" class="form-control"
-           formControlName="age">
-  </label>
-  <div class="col alert alert-danger" role="alert"
-       *ngIf="userForm.controls['age'].errors?.['required']
-         && userForm.controls['age'].touched">
-    khong de trong!
-  </div>
-  <div class="col alert alert-danger" role="alert"
-       *ngIf="userForm.controls['age'].errors?.['min']
-         && userForm.controls['age'].touched">
-    tuoi ko duoi 18!
+  <div class="text-left">
+    <label>acreage</label>
   </div>
   <div class="form-group">
-    <button class="btn btn-info" type="submit" [disabled]="!userForm.valid">Submit Application</button>
+    <input type="text" class="form-control" formControlName="userForm" id="exampleInputAcreage"
+           placeholder="acreage" value="{{user.acreage}}">
   </div>
-
+  <div class="text-left">
+    <label>population</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="userForm" id="exampleInputPopulation"
+           placeholder="population" value="{{user.population}}">
+  </div>
+  <div class="text-left">
+    <label>gdp</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="userForm" id="exampleInputGdp"
+           placeholder="gdp" value="{{user.gdp}}">
+  </div>
+  <div class="text-left">
+    <label>description</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="userForm" id="exampleInputDescription"
+           placeholder="description" value="{{user.description}}">
+  </div>
 </form>
 
